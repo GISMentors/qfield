@@ -1,0 +1,38 @@
+site_name: QField pro každého
+site_url:  https://gismentors.github.io/qfield/
+docs_dir:  docs
+theme: 
+  name: material
+  language: cs
+  features:
+    - content.code.copy
+    - navigation.footer
+    - toc.integrate
+  palette:
+    primary: yellow
+copyright: Copyright &copy; 2014-2025 GISMentors
+use_directory_urls: false
+nav:
+  - Základní používání:
+      - intro/instalace.md
+      - intro/zakladni_funkce.md
+  - Pořizování dat:
+      - editace/editace.md
+      - editace/synchronizace.md
+  - Příprava projektu:
+      - projekt/formulare.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption  
+plugins:
+  - glightbox
+  - search
+  - macros
+extra:
+  wikipedia: https://cs.wikipedia.org/wiki
+  skoleni: https://gismentors.github.io
+  rarr: →
