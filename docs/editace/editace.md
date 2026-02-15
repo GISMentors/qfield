@@ -96,8 +96,36 @@ Umístění potvrdíme zelenou potvrzovací ikonou. Bod se přesune na nové mí
 
 ## Mazání geoprvků
 
-TODO
+Mazání prvků se realizuje přes formulář prvků, který jsme již viděli
+v části editace.
+
+K formuláři je možné se tedy dostat stejně jako v případě editace a to dotykem (kliknutím)
+na prvek v mapě a následně výběrem prvku ze seznamu.
+
+Druhá možnost je dlouhým stiskem na geoprvek v mapě.
+V případě dlouhého stisku se aktivujě kontextová nápověda, která obsahuje
+referenci na geoprvek a zobrazení formuláře.
+
+<figure>
+<img src="images/delete_point1.jpg" alt="Kontextová nabídka" class="img-small" />
+<figcaption>Kontextová nabídka</figcaption>
+</figure>
+
+Na formuláři v pravé části najdeme možnost zobrazení dalších funkcí. Jedna z nich
+je Odstranit prvek.
+
+<figure>
+<img src="images/delete_point2.jpg" alt="Funkce formuláře" class="img-small" />
+<figcaption>Funkce formuláře</figcaption>
+</figure>
+
+Odstranění prvku musíme potvrdit na následujícím dialogu.
+
+<figure>
+<img src="images/delete_point3.jpg" alt="Potvrzení odstranění geoprvku" class="img-small" />
+<figcaption>Potvrzení odstranění geoprvku</figcaption>
+</figure>
 
 ## Topologická editace geoprvků
 
-TODO
+Podobně jako v QGIS Desktop je možné zapnout topologickou editaci.
