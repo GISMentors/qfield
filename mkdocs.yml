@@ -36,3 +36,5 @@ extra:
   wikipedia: https://cs.wikipedia.org/wiki
   skoleni: https://gismentors.github.io
   rarr: →
+extra_css:
+  - stylesheets/extra.css

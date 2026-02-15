@@ -5,21 +5,18 @@ nebo projektů z úložiště na cloudu (např. QFieldCloud). V rámci QField je
 možné rovněž vytvářet nové projekty.
 
 <figure>
-<img src="images/open.jpg" class="large"
-alt="Projekty" />
+<img src="images/open.jpg" class="img-small" alt="Projekty" />
 <figcaption>Projekty</figcaption>
 </figure>
 
 
 <figure>
-<img src="images/local_projects.jpg" class="large"
-alt="Lokální projekty" />
+<img src="images/local_projects.jpg" class="img-small" alt="Lokální projekty" />
 <figcaption>Lokální projekty</figcaption>
 </figure>
 
 <figure>
-<img src="images/qfield_cloud_projects.jpg" class="large"
-alt="Projekty na cloudu" />
+<img src="images/qfield_cloud_projects.jpg" class="img-small" alt="Projekty na cloudu" />
 <figcaption>Projekty na cloudu</figcaption>
 </figure>
 
@@ -38,8 +35,7 @@ dotyku obou prstů obrazovky.
 Posun mapy se realizuje pomocí jednoho prstu.
 
 <figure>
-<img src="images/view.jpg" class="large"
-alt="Mapové okno" />
+<img src="images/view.jpg" class="img-small" alt="Mapové okno" />
 <figcaption>Mapové okno</figcaption>
 </figure>
 
@@ -50,8 +46,7 @@ poskytuje rychlou informaci o jejich pozici a grafickém zobrazení v
 mapovém okně. 
 
 <figure>
-<img src="images/layers.jpg" class="large"
-alt="Panel vrstev" />
+<img src="images/layers.jpg" class="img-small" alt="Panel vrstev" />
 <figcaption>Panel vrstev</figcaption>
 </figure>
 
@@ -59,8 +54,7 @@ Podržením prstu na vrstvě aktivujeme informace o vrstvě,
 jako je průhlednost, počet prvků nebo možnost zobrazení seznamu prvků.
 
 <figure>
-<img src="images/layer_info.jpg" class="large"
-alt="Informace o vrstvě" />
+<img src="images/layer_info.jpg" class="img-small" alt="Informace o vrstvě" />
 <figcaption>Informace o vrstvě</figcaption>
 </figure>
 
@@ -76,7 +70,7 @@ kurzor, který je uprostřed byl umístěn na místo, kam chceme umístit
 bod. 
 
 <figure>
-<img src="images/measure1.jpg" class="large"
+<img src="images/measure1.jpg" class="img-small"
 alt="Umístění kurzoru na výchozí místo měření" />
 <figcaption>Umístění kurzoru na výchozí místo měření</figcaption>
 </figure>
@@ -86,7 +80,7 @@ tak aby druhý bod měření byl n amístě kurzoru. Interaktivně se nám
 zobrazuje délka segmentu a azimut linie vůči severu ve stupních.
 
 <figure>
-<img src="images/measure2.jpg" class="large"
+<img src="images/measure2.jpg" class="img-small"
 alt="Umístění kurzoru na druhý bod měření" />
 <figcaption>Umístění kurzoru na druhý bod měření</figcaption>
 </figure>
@@ -96,7 +90,7 @@ vidíme vždy celkovou délku (Délka) a délku aktuálně měřeného
 segmentu (Segment).
 
 <figure>
-<img src="images/measure3.jpg" class="small"
+<img src="images/measure3.jpg" class="img-small"
 alt="Umístění kurzoru na třetí bod měření" />
 <figcaption>Umístění kurzoru na třetí bod měření</figcaption>
 </figure>
@@ -107,7 +101,7 @@ Měření vzdálenosti umožňuje zobrazení profilu modelu terénu.
 Jedná se velmi orientační hodnoty vycházející z modelu (TODO) 
 
 <figure>
-<img src="images/elevation_profile.jpg" class="small"
+<img src="images/elevation_profile.jpg" class="img-small"
 alt="Profil terénu" />
 <figcaption>Profil terénu</figcaption>
 </figure>
