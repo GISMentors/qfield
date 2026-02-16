@@ -10,7 +10,7 @@ theme:
     - toc.integrate
   palette:
     primary: yellow
-copyright: Copyright &copy; 2014-2025 GISMentors
+copyright: Copyright &copy; 2014-2026 GISMentors
 use_directory_urls: false
 nav:
   - Základní používání:

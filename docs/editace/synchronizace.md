@@ -167,16 +167,61 @@ Vidíme nově přidaný bod.
 
 ## Synchronizace kopírováním souborů
 
-TODO
+Sychronizace dat je možná také kopírováním souborů. Pokud pracujete např. jen s
+jednou databází ve formátu GeoPackage (GPKG), stačí po zapsání změn tuto databázi 
+překopírovat z jednoho zdroje na druhý.
+
+Toto kopírování je možné realizovat buď přes správce souborů nebo 
+s využitím nástrojů zásuvného modulu pro QGIS resp. s využitím QField.
+
+V případě, že kopírujete ručně, pak je nutné dávat velký pozor na zámky souborů, 
+přiložená data, apod.
+
+V případě využití GUI obou nástrojů může být situace jednodušší, přesto se
+může stát, že ne všechbo proběhne vždy bez problémů.
+
+Obecně tuto varinatu sychnronizace nedoporučujeme, pokud nic nebrání využití cloudu.
 
 ## PostGIS
 
-TODO
+Jedna z možností jak se vyhnout potřebě synchronizace dat je využití 
+databázového systému PostgreSQL/PostGIS. PostgreSQL je profesionální systém,
+vyvíjený pod svobodnou licencí a je k dispozici zdarma. 
+
+Pro neznalé podobných systémů se jedná o řízené tabulky s daty, kde se prvky zapisují
+jako řádky tabulky. Ono je to samozřejmě složitější, 
+ale v rámci našeho kurzu nebudeme řešit detaily.
+Rozšíření PostGIS umožňuje zapsat geometrii geoprvků do jednoho z polí tabulky.
+
+Z pohledu QGIS je pak možné takto ukládaná data připojit podobně jako připojujeme
+mapové (datové) služby OGC (např. WMS, WFS). Podstatné je, že jakékoli změny provedené
+na straně QGIS nebo QField se automaticky zapíší do PostGIS databáze a synchronizace
+je tedy téměř okamžitá. Tento způsob připojení dat, však vyžaduje stabilní připojení k
+síti (např. LTE).
+
+Více informací o tom jak připojit data z PostGIS v QGIS najdete v rámci materiálu pro kurz
+PostGIS pro začátečníky:
+[Připojení dat z PostGIS v QGIS](https://gismentors.github.io/postgis-zacatecnik/kapitoly/2_zaciname.html#zobrazujeme-data-v-qgis)
 
 ## Mergin Maps
 
-TODO
+Alternativou k QField je nástroj [Mergin Maps](https://fr.merginmaps.com/). 
+Nabízí obdobnou funkcionalitu jako QField. Liší se detailech a může někomu vyhovovat
+více než QField. Synchronizace dat probíhá obdobně jako v případě QField a to s využitím
+cloudu Mergin Maps.
 
 ## GIS Quick
 
-TODO
+Další možnou alternativou je využití nástroje [GIS Quick](https://gisquick.org/).
+Nejedná se úplně o cílené řešení pro mobilní mapování, ale tuto funkcionalitu nabízí.
+Primárně slouží k publikování dat v prostředí WWW prohlížeče. 
+
+Pomocí zásuvného modulu pro QGIS je možné velmi rychle publikovat data na 
+server GIS Quick, který si může uživatel buď provozovat sám nebo využít existující server. 
+
+Vypublikovaný QGIS projekt je pak dostupný v rámci WWW prohlížeče (např. Chrome)
+a to i s optimalizací pro mobilní variantu. Klient umožńuje editaci dat stejně jako 
+QField nebo Mergin Maps. 
+
+Nevýhodou tohoto řešení je stejně jako v případě PostGIS nutnost stabilního připojení
+k síti.
