@@ -110,11 +110,60 @@ Následně můžeme pomocí ikony Open otevřít stažený projekt.
 
 ## Úprava dat v QGISu
 
-TODO
+V případě, že provedem úpravy na straně QGIS, můžeme je nahrát na cloud.
 
-## Nahrání upravených data zpět na cloud
+<figure>
+<img src="images/sync9.png" alt="Nový geoprvek" class="img-middle" />
+<figcaption>Nový geoprvek</figcaption>
+</figure>
 
-TODO
+Změny nejdříve zapíšeme do souboru, nejlépe ukončením editace.
+Pak zvolíme ikonu cloudu (druhou na liště zásuvného modulu).
+
+<figure>
+<img src="images/sync10.png" alt="No action" class="img-middle" />
+<figcaption>No action</figcaption>
+</figure>
+
+Implicitně je stav No action, tedy se neprovede, žádná operace.
+V tomto případě chceme nahrát data z lokálního počítače na cloud.
+Volíme proto možnost lokálního počítače, buď zaškrtávacím tlačítkem
+pod ikonou desktopu vedle položky, kterou chceme synchronizovat nebo talčítkem 
+Prefer Local (zapne všechny položky v seznamu jako local).
+
+<figure>
+<img src="images/sync11.png" alt="Prefer Local" class="img-middle" />
+<figcaption>Prefer Local</figcaption>
+</figure>
+
+Zvolíme možnost Perform Actions, která provede synchronizaci.
+
+<figure>
+<img src="images/sync12.png" alt="Synchronizace dokončena" class="img-middle" />
+<figcaption>Synchronizace dokončena</figcaption>
+</figure>
+
+Na mobilním telefonu zvolíme nejdříve boční panel.
+
+<figure>
+<img src="images/sync13.jpg" alt="Boční panel QField" class="img-small" />
+<figcaption>Boční panel QField</figcaption>
+</figure>
+
+V panelu vybere ikonu cloudu a na další obrazovce dáme Synchronizovat.
+
+<figure>
+<img src="images/sync14.jpg" alt="Synchronizovat" class="img-small" />
+<figcaption>Synchronizovat</figcaption>
+</figure>
+
+Data se stáhnou z cloudu a již je máme k dispozici v mapě. 
+Vidíme nově přidaný bod.
+
+<figure>
+<img src="images/sync15.jpg" alt="Aktualizovaná data" class="img-small" />
+<figcaption>Aktualizovaná data</figcaption>
+</figure>
 
 ## Synchronizace kopírováním souborů
 
