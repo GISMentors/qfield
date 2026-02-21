@@ -1,6 +1,8 @@
+# Formuláře
+
 ## QGIS Projekt
 
-Většina nasttavení se přenáší jako součást projektu. 
+Většina nastavení se přenáší jako součást projektu.
 Projekt je soubor ve formátu XML komprimovaný metodou ZIP.
 Symboly pro ikony, barvy nebo nastavení pro QFiled jsou součástí projektu.
 Pokud je váš projekt datově malý, pak se doporučuje umisťovat data 

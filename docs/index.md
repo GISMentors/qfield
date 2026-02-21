@@ -28,8 +28,6 @@ Případné chyby nebo náměty na vylepšení můžete hlásit:
 
 * <https://github.com/GISMentors/qfield/issues>
 
-*Verze textu dokumentu:* |release| (sestaveno |today|)
-
 ### Autoři
 
 Za [GISMentors](https://www.gismentors.cz/):
