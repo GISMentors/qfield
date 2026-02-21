@@ -12,14 +12,11 @@ pro synchronizaci.
 - [iOS](https://apps.apple.com/app/qfield-for-qgis/id1531726814){ target="_blank" }
 - dále lze nainstalovat i na systémy [Windows, Linux i MacOS](https://docs.qfield.org/getstarted/){ target="_blank" }
 
-<div id="install">
+![install android](images/install_android.jpg){ class="img-small" }
 
-<figure>
-<img src="images/install_android.jpg" alt="install android" class="img-small" />
-<figcaption>Instalace na OS Android.</figcaption>
-</figure>
-
-</div>
+/// caption
+Instalace na OS Android.
+///
 
 ## QGIS
 
