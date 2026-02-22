@@ -25,18 +25,20 @@ a máme projekt načten z QField Cloudu je synchronizace snadná.
 
 Zvolíme boční panel, který obsahuje ikonu cloudu, s informací o změnách.
 
-<figure>
-<img src="images/sync_mobile1.jpg" alt="Boční panel" class="img-small" />
-<figcaption>Boční panel</figcaption>
-</figure>
+![Boční panel](images/sync_mobile1.jpg){ class="img-small" }
+
+/// caption
+Boční panel.
+///
 
 Na následující obrazovce volíme buď kompletní synchronizaci (Synchronizovat) nebo
 jen synchronizaci dat (Push změny).
 
-<figure>
-<img src="images/sync_mobile2.jpg" alt="Boční panel" class="img-small" />
-<figcaption>Boční panel</figcaption>
-</figure>
+![Synchronizovat](images/sync_mobile2.jpg){ class="img-small" }
+
+/// caption
+Synchronizovat.
+///
 
 V obou případech dojde k nahrání dat na cloud, ze kterého můžeme načít data v QGIS,
 tak jak je popsáno dále.
@@ -45,18 +47,20 @@ tak jak je popsáno dále.
 
 Zásuvný modul se instaluje stejně jako jiné moduly z hlavního repozitáře QGIS.
 
-<figure>
-<img src="images/sync1.png" alt="Instalace zásuvného modulu" class="img-middle" />
-<figcaption>Instalace zásuvného modulu</figcaption>
-</figure>
+![Instalace zásuvného modulu](images/sync1.png){ class="img-middle" }
+
+/// caption
+Instalace zásuvného modulu.
+///
 
 Nainstalovaný modul instaluje nástrojovou lištu, která slouží k sychronizaci jak přes cloud,
 dat bez využití cloudu. Součástí lišty je i nastavení pro QField. 
 
-<figure>
-<img src="images/sync2.png" alt="Nástrojová lišta modulu" class="img-small" />
-<figcaption>Nástrojová lišta modulu</figcaption>
-</figure>
+![Nástrojová lišta modulu](images/sync2.png){ class="img-small" }
+
+/// caption
+Nástrojová lišta modulu.
+///
 
 ## Načtení dat v QGISu
 
@@ -66,64 +70,72 @@ a je aktuálně otevřen v QGIS.
 
 Po zvolení prvního tlačítka a přihlášení se do cloudu se zobrazí seznam naši projektů.
 
-<figure>
-<img src="images/sync3.png" alt="Seznam projektů na cloudu" class="img-middle" />
-<figcaption>Seznam projektů na cloudu</figcaption>
-</figure>
+![Seznam projektů na cloudu](images/sync3.png){ class="img-middle" }
+
+/// caption
+Seznam projektů na cloudu.
+///
 
 Po vybrání projektu ze seznamu již můžeme provést synchronizaci pomocí druhého tlačítka.
 
-<figure>
-<img src="images/sync4.png" alt="Aktivovaný projekt" class="img-middle" />
-<figcaption>Aktivovaný projekt</figcaption>
-</figure>
+![Aktivovaný projekt](images/sync4.png){ class="img-middle" }
+
+/// caption
+Aktivovaný projekt.
+///
 
 V případě, že projekt nemáme k dispozici, vyzve nás zásovný modul k zadání cesty,
 kam se má projekt uložit.
 
-<figure>
-<img src="images/sync5.png" alt="Cesta k projektu" class="img-middle" />
-<figcaption>Cesta k projektu</figcaption>
-</figure>
+![Cesta k projektu](images/sync5.png){ class="img-middle" }
+
+/// caption
+Cesta k projektu.
+///
 
 Následně již můžeme provést synchronizaci dat. V našem případě je situace
 jednoduchá, protože lokálně nemáme žádná data, proto převezmeme data z cloudu.
 
-<figure>
-<img src="images/sync6.png" alt="Stažení dat z cloudu" class="img-middle" />
-<figcaption>Stažení dat z cloudu</figcaption>
-</figure>
+![Stažení dat z cloudu](images/sync6.png){ class="img-middle" }
+
+/// caption
+Stažení dat z cloudu.
+///
 
 Pokud dojde ke stažení dat, objeví se potvrzení o stažení.
 
-<figure>
-<img src="images/sync7.png" alt="Potvrzení stažení dat z cloudu" class="img-middle" />
-<figcaption>Potvrzení stažení dat z cloudu</figcaption>
-</figure>
+![Potvrzení stažení dat z cloudu](images/sync7.png){ class="img-middle" }
+
+/// caption
+Potvrzení stažení dat z cloudu.
+///
 
 Následně můžeme pomocí ikony Open otevřít stažený projekt.
 
-<figure>
-<img src="images/sync8.png" alt="Otevřený stažený projekt" class="img-middle" />
-<figcaption>Otevřený stažený projekt</figcaption>
-</figure>
+![Otevřený stažený projekt](images/sync8.png){ class="img-middle" }
+
+/// caption
+Otevřený stažený projekt.
+///
 
 ## Úprava dat v QGISu
 
 V případě, že provedem úpravy na straně QGIS, můžeme je nahrát na cloud.
 
-<figure>
-<img src="images/sync9.png" alt="Nový geoprvek" class="img-middle" />
-<figcaption>Nový geoprvek</figcaption>
-</figure>
+![Nový geoprvek](images/sync9.png){ class="img-middle" }
+
+/// caption
+Nový geoprvek.
+///
 
 Změny nejdříve zapíšeme do souboru, nejlépe ukončením editace.
 Pak zvolíme ikonu cloudu (druhou na liště zásuvného modulu).
 
-<figure>
-<img src="images/sync10.png" alt="No action" class="img-middle" />
-<figcaption>No action</figcaption>
-</figure>
+![No action](images/sync10.png){ class="img-middle" }
+
+/// caption
+No action.
+///
 
 Implicitně je stav No action, tedy se neprovede, žádná operace.
 V tomto případě chceme nahrát data z lokálního počítače na cloud.
@@ -131,39 +143,44 @@ Volíme proto možnost lokálního počítače, buď zaškrtávacím tlačítkem
 pod ikonou desktopu vedle položky, kterou chceme synchronizovat nebo talčítkem 
 Prefer Local (zapne všechny položky v seznamu jako local).
 
-<figure>
-<img src="images/sync11.png" alt="Prefer Local" class="img-middle" />
-<figcaption>Prefer Local</figcaption>
-</figure>
+![Prefer Local](images/sync11.png){ class="img-middle" }
+
+/// caption
+Prefer Local.
+///
 
 Zvolíme možnost Perform Actions, která provede synchronizaci.
 
-<figure>
-<img src="images/sync12.png" alt="Synchronizace dokončena" class="img-middle" />
-<figcaption>Synchronizace dokončena</figcaption>
-</figure>
+![Synchronizace dokončena](images/sync12.png){ class="img-middle" }
+
+/// caption
+Synchronizace dokončena.
+///
 
 Na mobilním telefonu zvolíme nejdříve boční panel.
 
-<figure>
-<img src="images/sync13.jpg" alt="Boční panel QField" class="img-small" />
-<figcaption>Boční panel QField</figcaption>
-</figure>
+![Boční panel QField](images/sync13.jpg){ class="img-small" }
+
+/// caption
+Boční panel QField.
+///
 
 V panelu vybere ikonu cloudu a na další obrazovce dáme Synchronizovat.
 
-<figure>
-<img src="images/sync14.jpg" alt="Synchronizovat" class="img-small" />
-<figcaption>Synchronizovat</figcaption>
-</figure>
+![Synchronizovat](images/sync14.jpg){ class="img-small" }
+
+/// caption
+Synchronizovat.
+///
 
 Data se stáhnou z cloudu a již je máme k dispozici v mapě. 
 Vidíme nově přidaný bod.
 
-<figure>
-<img src="images/sync15.jpg" alt="Aktualizovaná data" class="img-small" />
-<figcaption>Aktualizovaná data</figcaption>
-</figure>
+![Aktualizovaná data](images/sync15.jpg){ class="img-small" }
+
+/// caption
+Aktualizovaná data.
+///
 
 ## Synchronizace kopírováním souborů
 

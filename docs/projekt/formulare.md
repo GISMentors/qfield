@@ -29,10 +29,12 @@ do některého pole mohou zapisovat pouze konkrétní hodnoty z výčtu.
 
 Formuláře se dají konfigorovat přes nastavení vlastností vrstvy.
 
-<figure>
-<img src="images/forms_1.png" alt="Vlastnosti vrstvy" class="img-middle" />
-<figcaption>Vlastnosti vrstvy</figcaption>
-</figure>
+![Vlastnosti vrstvy](images/forms_1.png){ class="img-middle" }
+
+/// caption
+Vlastnosti vrstvy.
+///
+
 
 ## Widgety
 
@@ -42,39 +44,46 @@ což jsou malé kousky kódu s GUI, které zajišťují korektní vstupy.
 Následující obrázek demonstruje, jak je možné pro pole typ, které je 
 celé číslo specifikovat výčet hodnot, které je možné zadávat. 
 
-<figure>
-<img src="images/forms_2.png" alt="Výčet hodnot" class="img-middle" />
-<figcaption>Výčet hodnot</figcaption>
-</figure>
+![Výčet hodnot](images/forms_2.png){ class="img-middle" }
+
+/// caption
+Výčet hodnot.
+///
 
 Při vytváření nebo editaci atributů prvku se pak tento seznam hodnot 
 zobrazuje místo čísla, ale do databáze se zapisuje číslo.
 
-<figure>
-<img src="images/forms_3.png" alt="Výběr z výčtu hodnot" class="img-middle" />
-<figcaption>Výběr z výčtu hodnot</figcaption>
-</figure>
+![Výběr z výčtu hodnot](images/forms_3.png){ class="img-middle" }
+
+/// caption
+Výběr z výčtu hodnot.
+///
 
 Stejně se pak po synchronizaci projektu a dat chová QField.
 
-<figure>
-<img src="images/forms_4.jpg" alt="Výběr z výčtu hodnot v QField" class="img-small" />
-<figcaption>Výběr z výčtu hodnot v QField</figcaption>
-</figure>
+![Výběr z výčtu hodnot v QField](images/forms_4.jpg){ class="img-small" }
+
+/// caption
+Výběr z výčtu hodnot v QField.
+///
 
 Oblíbeným Widgetem je Widget pro fotografie (resp. obecně přílohy).
+QField ukládá fotografie s relativní cestou, proto je vhodné nastavit
+cesty jako relativní k projektu.
 
 Podrobně je problematika popsána v rámci školení 
 [QGIS pro pokročilé](https://gismentors.github.io/qgis-pokrocily/pokrocile_upravy/index.html)
 
 ## Další pravidla pro pole
 
-Mezi další pravidla pro pole, která se mohou nastavovat je např. 
+Mezi další pravidla pro pole, která se mohou nastavovat je např.: 
+
 * Omezení, že hodnota musí být uvedena - Není null
 * Unikátní hodnota - musí být vždy jedinečná hodnota v rámci vrstvy
 * Výchozí hodnota - zapíše se jako výchozí, pokud uživatel nespecifikuje
 
-<figure>
-<img src="images/forms_5.png" alt="Další pravidla pro pole" class="img-small" />
-<figcaption>Další pravidla pro pole</figcaption>
-</figure>
+![Další pravidla pro pole](images/forms_5.png){ class="img-middle" }
+
+/// caption
+Další pravidla pro pole.
+///

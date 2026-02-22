@@ -4,21 +4,24 @@ Po spuštění aplikace QField je možné zvolit otevření buď lokálních pro
 nebo projektů z úložiště na cloudu (např. QFieldCloud). V rámci QField je
 možné rovněž vytvářet nové projekty.
 
-<figure>
-<img src="images/open.jpg" class="img-small" alt="Projekty" />
-<figcaption>Projekty</figcaption>
-</figure>
+![Projekty](images/open.jpg){ class="img-small" }
+
+/// caption
+Projekty.
+///
+
+![Lokální projekty](images/local_projects.jpg){ class="img-small" }
+
+/// caption
+Lokální projekty.
+///
 
 
-<figure>
-<img src="images/local_projects.jpg" class="img-small" alt="Lokální projekty" />
-<figcaption>Lokální projekty</figcaption>
-</figure>
+![Projekty na cloudu](images/qfield_cloud_projects.jpg){ class="img-small" }
 
-<figure>
-<img src="images/qfield_cloud_projects.jpg" class="img-small" alt="Projekty na cloudu" />
-<figcaption>Projekty na cloudu</figcaption>
-</figure>
+/// caption
+Projekty na cloudu.
+///
 
 ## Mapové okno
 
@@ -34,10 +37,12 @@ dotyku obou prstů obrazovky.
 
 Posun mapy se realizuje pomocí jednoho prstu.
 
-<figure>
-<img src="images/view.jpg" class="img-small" alt="Mapové okno" />
-<figcaption>Mapové okno</figcaption>
-</figure>
+![Mapové okno](images/view.jpg){ class="img-small" }
+
+/// caption
+Mapové okno.
+///
+
 
 ## Panel vrstev
 
@@ -45,18 +50,20 @@ Přepínač vrstev zobrazuje všechny vrstvy projektu. Jejich zobrazení
 poskytuje rychlou informaci o jejich pozici a grafickém zobrazení v
 mapovém okně. 
 
-<figure>
-<img src="images/layers.jpg" class="img-small" alt="Panel vrstev" />
-<figcaption>Panel vrstev</figcaption>
-</figure>
+![Panel vrstev](images/layers.jpg){ class="img-small" }
+
+/// caption
+Panel vrstev.
+///
 
 Podržením prstu na vrstvě aktivujeme informace o vrstvě,
 jako je průhlednost, počet prvků nebo možnost zobrazení seznamu prvků.
 
-<figure>
-<img src="images/layer_info.jpg" class="img-small" alt="Informace o vrstvě" />
-<figcaption>Informace o vrstvě</figcaption>
-</figure>
+![Informace o vrstvě](images/layer_info.jpg){ class="img-small" }
+
+/// caption
+Informace o vrstvě.
+///
 
 Dotykem na ikonu oka vedle názvu vrstvy můžeme vrstvu zobrazit nebo
 skrýt.
@@ -69,39 +76,42 @@ do polylinie. Přidávání bodů se realizuje posunem mapy tak, aby
 kurzor, který je uprostřed byl umístěn na místo, kam chceme umístit
 bod. 
 
-<figure>
-<img src="images/measure1.jpg" class="img-small"
-alt="Umístění kurzoru na výchozí místo měření" />
-<figcaption>Umístění kurzoru na výchozí místo měření</figcaption>
-</figure>
+![Umístění kurzoru na výchozí místo měření](images/measure1.jpg){ class="img-small" }
+
+/// caption
+Umístění kurzoru na výchozí místo měření.
+///
 
 Následně zvolíme ikonu Plus pro přidání bodu. Pak posuneme mapu, 
 tak aby druhý bod měření byl n amístě kurzoru. Interaktivně se nám
 zobrazuje délka segmentu a azimut linie vůči severu ve stupních.
 
-<figure>
-<img src="images/measure2.jpg" class="img-small"
-alt="Umístění kurzoru na druhý bod měření" />
-<figcaption>Umístění kurzoru na druhý bod měření</figcaption>
-</figure>
+![Umístění kurzoru na druhý bod měření](images/measure2.jpg){ class="img-small" }
+
+/// caption
+Umístění kurzoru na druhý bod měření.
+///
 
 Takto můžeme postupně přidat další body měření. V případě dalších bodů
 vidíme vždy celkovou délku (Délka) a délku aktuálně měřeného 
 segmentu (Segment).
 
-<figure>
-<img src="images/measure3.jpg" class="img-small"
-alt="Umístění kurzoru na třetí bod měření" />
-<figcaption>Umístění kurzoru na třetí bod měření</figcaption>
-</figure>
+![Umístění kurzoru na třetí bod měření](images/measure3.jpg){ class="img-small" }
+
+/// caption
+Umístění kurzoru na třetí bod měření.
+///
 
 ## Profil terénu
 
 Měření vzdálenosti umožňuje zobrazení profilu modelu terénu.
-Jedná se velmi orientační hodnoty vycházející z modelu (TODO) 
+Jedná se velmi orientační hodnoty vycházející z modelu Mapzen Global Terrain (MGT)
+Jsou to data o přibližně ~30 m / pixel. 
 
-<figure>
-<img src="images/elevation_profile.jpg" class="img-small"
-alt="Profil terénu" />
-<figcaption>Profil terénu</figcaption>
-</figure>
+![Profil terénu](images/elevation_profile.jpg){ class="img-small" }
+
+/// caption
+Profil terénu.
+///
+
+V případě, že potřebujete přesnější model je toto možné nastavit v projektu QGIS.
