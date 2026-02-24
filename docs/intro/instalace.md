@@ -10,7 +10,7 @@ pro synchronizaci.
 
 - [Android](https://play.google.com/store/apps/details?id=ch.opengis.qfield){ target="_blank" }
 - [iOS](https://apps.apple.com/app/qfield-for-qgis/id1531726814){ target="_blank" }
-- dále lze nainstalovat i na systémy [Windows, Linux i MacOS](https://docs.qfield.org/getstarted/){ target="_blank" }
+- dále lze nainstalovat i na systémy [Windows, Linux i MacOS](https://docs.qfield.org/get-started/#installation){ target="_blank" }
 
 ![install android](images/install_android.jpg){ class="img-small" }
 
