@@ -23,6 +23,6 @@ Instalace na OS Android.
 Instalace systému QGIS je popsána v rámci 
 materiálů pro školenní [QGIS pro začátečníky](https://gismentors.github.io/qgis-zacatecnik/instalace/index.html){ target="_blank" }.
 
-## Pluginy pro synchronizaci
+### Plugin pro synchronizaci QfieldSync
 
-Instalace pluginů pro synchronizace je posána ve sekci Editace.
+Instalace pluginu pro synchronizaci je posána ve sekci [Instalace zásuvného modulu QGIS](../editace/synchronizace.html).
