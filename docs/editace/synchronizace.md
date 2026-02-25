@@ -238,14 +238,14 @@ Nabízí obdobnou funkcionalitu jako QField. Liší se detailech a může někom
 více než QField. Funguje na podobném principu jako QField (využívá QGIS projekt, formuláře atd.), ale synchronizace dat 
 probíhá technicky jiným způsobem, což umožňuje například  možné pohodleně editovat data i v QGIS
 
-## GIS Quick
+## Gisquick
 
-Další možnou alternativou je využití nástroje [GIS Quick](https://gisquick.org/).
+Další možnou alternativou je využití nástroje [Gisquick](https://gisquick.org/).
 Nejedná se úplně o cílené řešení pro mobilní mapování, ale tuto funkcionalitu nabízí.
 Primárně slouží k publikování dat v prostředí WWW prohlížeče. 
 
 Pomocí zásuvného modulu pro QGIS je možné velmi rychle publikovat data na 
-server GIS Quick, který si může uživatel buď provozovat sám nebo využít existující server. 
+server Gisquick, který si může uživatel buď provozovat sám nebo využít existující server. 
 
 Vypublikovaný QGIS projekt je pak dostupný v rámci WWW prohlížeče (např. Chrome)
 a to i s optimalizací pro mobilní variantu. Klient umožńuje editaci dat stejně jako 
