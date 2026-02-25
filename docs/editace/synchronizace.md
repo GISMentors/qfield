@@ -8,8 +8,7 @@ V případě QField se nabízí v zásadě čtyři možnosti:
 * Ruční kopírování dat bez synchronizace - přes USB kabel
 * Využití vlastní PostgreSQL/PostGIS připojení dat - pouze online
 
-Velmi snadné je využití služby QFieldCloud. V omezené podobě je k dispozici zdarma 
-(100MB uložiště, sdílení mezi uživately pouze pokud je projekt veřejný).
+Velmi snadné je využití služby QFieldCloud.
 
 Ještě jednodušší je využití PostgreSQL/PostGIS připojení, protože k synchronizaci
 dochází automaticky, bez nutnosti jakékoli činnosti ze strany uživatele. Toto řešení
@@ -21,6 +20,13 @@ Detailněji je tento způsob popsán dále.
 
 V případě, že jsme provedli nějaké změny na straně mobilní aplikace 
 a máme projekt načten z QFieldCloudu je synchronizace snadná. 
+
+V současnosti je několik možností předplatných plánů pro uložiště QFieldCloud
+
+- **Community** - zdarma, 100MB uložiště, sdílení mezi uživateli je možné pouze pro projekty, které jsou veřejné. Lze vytvořit i privántí projekt, ale ten bude dostupný pouze pro uživatele, který ho vytvořil.
+- **Pro** - €15 měsíčně za uživatele -  1GB uložiště na uživatele, sdílení priváních projektů mezi uživateli
+- **Organisation** - €20 měsíčně za uživatele - stejně jako pro, navíc správa týmu, platba za konkrétní uživatele se účtuje jen pokud jsou ten daný měsíc aktivní
+
 
 ### Odeslání dat z QField na QFieldCloud
 
