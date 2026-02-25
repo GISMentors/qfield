@@ -3,25 +3,28 @@
 ## QGIS Projekt
 
 Většina nastavení se přenáší jako součást projektu.
-Projekt je soubor ve formátu XML komprimovaný metodou ZIP.
-Symboly pro ikony, barvy nebo nastavení pro QFiled jsou součástí projektu.
-Pokud je váš projekt datově malý, pak se doporučuje umisťovat data 
-a projekt do stejné složky nebo projekt od složky a data do podřízených složek.
+QFieldSync používá QGIS projekt ve formátu `.qgs`, což jednoduše soubor ve formátu XML. Ale lze použít i formát `.qgz`, 
+což je pouze komprimovaný `.qgs`  soubor v archivu ZIP, což umožňuje mít u projektu i nějaké doporvodné soubory.
+Symbologie a další nastavení vrstev je součástí QGIS projektu a přenáší se tak i do QField. 
+Projekt se ukloží pomocí ikony diskety v hlavní nástrojové liště QGIS. Pokud chceme sdílet projekt s dalšími uživateli 
+mimo cloud, je možné vytvořit z projektu a dat balíček pomocí QfieldSync zásuvného modulu, což připraví na jednom místě
+ QGIS projekt včetně dat 
 
+<!-- Pokud je váš projekt datově malý, pak se doporučuje umisťovat data 
+a projekt do stejné složky nebo projekt od složky a data do podřízených složek. -->
+<!-- 
 Když pak chcete např. projekt předat někomu jinému stačí hlavní složky komprimovat 
-a předat např. e-mailem. 
-
-Projekt se ukloží pomocí ikony diskety v hlavní nástrojové liště QGIS.
+a předat např. e-mailem.  -->
 
 ## GPKG formát
 
 Formát GPKG je malou souborovou geodatabází. Může obsahovat více vrstvev geodat.
 Jeho výhodou je, že se jedná o jeden soubor, který obsahuje jak data tak metadata.
 Některá pravidla však mohou uživatelům komplikovat práci s tímto formátem.
-Přesto, pokud k tomu není nějaký zásadní důvod, vám ho doporučujeme jako výchozí formát
-pro ukládání geodat v případě práce s QField. 
+Přesto, pokud k tomu není nějaký zásadní důvod, doporučujeme ho jako výchozí formát
+pro ukládání dat v QGIS i v práci s QField. 
 
-# Formuláře
+## Formuláře
 
 Součástí projektu jsou formuláře, kde je možné pro každou vrstvu nastavit,
 jak bude vypadat formulář pro editaci atributů. Např. můžete definovat, že se 
@@ -36,7 +39,7 @@ Vlastnosti vrstvy.
 ///
 
 
-## Widgety
+### Widgety
 
 Pro nastavení jak má zadávání hodnot vypadat je možné specifikovat Widgety, 
 což jsou malé kousky kódu s GUI, které zajišťují korektní vstupy.
@@ -68,13 +71,13 @@ Výběr z výčtu hodnot v QField.
 ///
 
 Oblíbeným Widgetem je Widget pro fotografie (resp. obecně přílohy).
-QField ukládá fotografie s relativní cestou, proto je vhodné nastavit
-cesty jako relativní k projektu.
+QField ukládá fotografie s relativní cestou, proto aby se fotografie zorazoivali ve formuláři v QGIS,
+je nutné nastavit cesty jako relativní k projektu.
 
 Podrobně je problematika popsána v rámci školení 
 [QGIS pro pokročilé](https://gismentors.github.io/qgis-pokrocily/pokrocile_upravy/index.html)
 
-## Další pravidla pro pole
+### Další pravidla pro pole
 
 Mezi další pravidla pro pole, která se mohou nastavovat je např.: 
 
