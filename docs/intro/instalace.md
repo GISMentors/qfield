@@ -3,7 +3,7 @@
 Instalace se sestává z několika kroků. V závislosti na povaze vaší práce
 si můžete vystačit např. pouze s aplikací QField pro mobilní zařízení.
 V případě, že budete i data synchronizovat na počítač (server) nebo
-chystat projekty pro další uživatele musíte instalovat i QGIS a plugin 
+chystat projekty pro další uživatele musíte instalovat i QGIS a plugin QfieldSync
 pro synchronizaci.
 
 ## QField
