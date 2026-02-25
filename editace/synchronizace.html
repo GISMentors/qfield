@@ -1,0 +1,1143 @@
+<!DOCTYPE html><html lang="cs" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gismentors.github.io/qfield/editace/synchronizace.html">
+      
+      
+        <link rel="prev" href="editace.html">
+      
+      
+        <link rel="next" href="../projekt/formulare.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Synchronizace - QField pro každého</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#synchronizace" class="md-skip">
+          Přeskočit obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Záhlaví">
+    <a href=".." title="QField pro každého" class="md-header__button md-logo" aria-label="QField pro každého" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QField pro každého
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Synchronizace
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hledat" placeholder="Hledat" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhledávání">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistit" aria-label="Vyčistit" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializace vyhledávání
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigace" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QField pro každého" class="md-nav__button md-logo" aria-label="QField pro každého" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    QField pro každého
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1">
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Základní používání
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Základní používání
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/instalace.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/zakladni_funkce.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Popis rozhraní
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pořizování dat
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pořizování dat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editace.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synchronizace
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="synchronizace.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synchronizace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synchronizace-dat-na-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synchronizace dat na QFieldCloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synchronizace dat na QFieldCloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#odeslani-dat-z-qfield-na-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Odeslání dat z QField na QFieldCloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalace-zasuvneho-modulu-qgis-qfieldsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalace zásuvného modulu QGIS - QFieldSync
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nacteni-dat-z-qfieldcloudu-do-qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Načtení dat z QFieldCloudu do QGIS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Načtení dat z QFieldCloudu do QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uprava-dat-v-qgisu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Úprava dat v QGISu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronizace-kopirovanim-souboru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synchronizace kopírováním souborů
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresqlpostgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/PostGIS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mergin-maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mergin Maps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gisquick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gisquick
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Příprava projektu
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Příprava projektu
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projekt/formulare.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Formuláře
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synchronizace-dat-na-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synchronizace dat na QFieldCloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synchronizace dat na QFieldCloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#odeslani-dat-z-qfield-na-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Odeslání dat z QField na QFieldCloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalace-zasuvneho-modulu-qgis-qfieldsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalace zásuvného modulu QGIS - QFieldSync
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nacteni-dat-z-qfieldcloudu-do-qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Načtení dat z QFieldCloudu do QGIS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Načtení dat z QFieldCloudu do QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uprava-dat-v-qgisu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Úprava dat v QGISu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronizace-kopirovanim-souboru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synchronizace kopírováním souborů
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresqlpostgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/PostGIS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mergin-maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mergin Maps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gisquick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gisquick
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="synchronizace">Synchronizace</h1>
+<p>Synchronizace dat mezi desktop počítačem a mobilním telefonem je možná různými způsoby.
+V případě QField se nabízí v zásadě čtyři možnosti:</p>
+<ul>
+<li>Využití služby QFieldCloud a zásuvného modulu pro QGIS QFieldSync - online i offline</li>
+<li>Využití zásuvného modulu QFieldSync bez využití služeb QFieldCloud - přes USB kabel, bluetooth, jiné cloudové služby</li>
+<li>Využití pouze vlastního PostgreSQL/PostGIS připojení dat - pouze online</li>
+<li>Ruční kopírování dat bez synchronizace</li>
+</ul>
+<p>Velmi snadné je využití služby QFieldCloud.</p>
+<p>Ještě jednodušší je využití PostgreSQL/PostGIS připojení, protože k synchronizaci
+dochází automaticky, bez nutnosti jakékoli činnosti ze strany uživatele. Toto řešení
+však vyžaduje stabilní připojení k internetu. Je sice možné využít nějaké další nástroje
+a toto omezení obejít, ale to již není tak triviální. 
+Detailněji je tento způsob popsán dále. </p>
+<h2 id="synchronizace-dat-na-qfieldcloud">Synchronizace dat na QFieldCloud</h2>
+<p>V případě, že jsme provedli nějaké změny na straně mobilní aplikace 
+a máme projekt načten z QFieldCloudu je synchronizace snadná. </p>
+<p>V současnosti je několik možností předplatných plánů pro uložiště QFieldCloud</p>
+<ul>
+<li><strong>Community</strong> - zdarma, 100MB uložiště, sdílení mezi uživateli je možné pouze pro projekty, které jsou veřejné. Lze vytvořit i privántí projekt, ale ten bude dostupný pouze pro uživatele, který ho vytvořil.</li>
+<li><strong>Pro</strong> - €15 měsíčně za uživatele -  1GB uložiště na uživatele, sdílení priváních projektů mezi uživateli</li>
+<li><strong>Organisation</strong> - €20 měsíčně za uživatele - stejně jako pro, navíc správa týmu, platba za konkrétní uživatele se účtuje jen pokud jsou ten daný měsíc aktivní</li>
+</ul>
+<h3 id="odeslani-dat-z-qfield-na-qfieldcloud">Odeslání dat z QField na QFieldCloud</h3>
+<p>Zvolíme boční panel, který obsahuje ikonu mraku (cloudu), s informací o změnách.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync_mobile1.jpg" data-desc-position="bottom"><img alt="Boční panel" class="img-small" src="images/sync_mobile1.jpg"></a></p>
+<figcaption>
+<p>Boční panel.</p>
+</figcaption>
+</figure>
+<p>Na následující obrazovce volíme buď:</p>
+<ul>
+<li><strong>Synchronizovat</strong> - kompletní synchronizace, stáhnout se aktuální data a projekt z QFieldCloudu do QField, a poté se 
+pošlou změny z QField do QFieldCloudu.</li>
+<li><strong>Push změny</strong> - pouze odeslání změn z QField do QFieldCloudu (bez jakéhokoliv stahování z QFieldCloudu do QField)</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync_mobile2.jpg" data-desc-position="bottom"><img alt="Synchronizovat" class="img-small" src="images/sync_mobile2.jpg"></a></p>
+<figcaption>
+<p>Možnosti synchronizace.</p>
+</figcaption>
+</figure>
+<p>V obou případech dojde k nahrání dat na cloud, ze kterého můžeme načít data v QGIS,
+tak jak je popsáno dále.</p>
+<h2 id="instalace-zasuvneho-modulu-qgis-qfieldsync">Instalace zásuvného modulu QGIS - QFieldSync</h2>
+<p>QFieldSync se instaluje stejně jako jiné moduly z hlavního repozitáře QGIS.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync1.png" data-desc-position="bottom"><img alt="Instalace zásuvného modulu" class="img-middle" src="images/sync1.png"></a></p>
+<figcaption>
+<p>Instalace zásuvného modulu QFieldSync.</p>
+</figcaption>
+</figure>
+<p>Nainstalovaný modul instaluje nástrojovou lištu, která slouží k sychronizaci jak přes cloud, tak i bez využití cloudu. Součástí lišty je i nastavení pro QField. </p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync2.png" data-desc-position="bottom"><img alt="Nástrojová lišta modulu" class="img-small" src="images/sync2.png"></a></p>
+<figcaption>
+<p>Nástrojová lišta QFieldSync.</p>
+</figcaption>
+</figure>
+<h2 id="nacteni-dat-z-qfieldcloudu-do-qgis">Načtení dat z QFieldCloudu do QGIS</h2>
+<p>K načtení dat z QFieldCloudu slouží první dvě tlačítka na liště. První použijeme v případě,
+že zatím projekt na disku nemáme k dispozici. Druhé v případě, že již projekt máme k dispozici
+a je aktuálně otevřen v QGIS.</p>
+<p>Po zvolení prvního tlačítka a přihlášení se do cloudu se zobrazí seznam naši projektů.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync3.png" data-desc-position="bottom"><img alt="Seznam projektů na cloudu" class="img-middle" src="images/sync3.png"></a></p>
+<figcaption>
+<p>Seznam projektů na cloudu.</p>
+</figcaption>
+</figure>
+<p>Po vybrání projektu ze seznamu již můžeme provést synchronizaci pomocí druhého tlačítka.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync4.png" data-desc-position="bottom"><img alt="Aktivovaný projekt" class="img-middle" src="images/sync4.png"></a></p>
+<figcaption>
+<p>Aktivovaný projekt.</p>
+</figcaption>
+</figure>
+<p>V případě, že projekt nemáme k dispozici, vyzve nás zásovný modul k zadání cesty,
+kam se má projekt uložit.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync5.png" data-desc-position="bottom"><img alt="Cesta k projektu" class="img-middle" src="images/sync5.png"></a></p>
+<figcaption>
+<p>Cesta k projektu.</p>
+</figcaption>
+</figure>
+<p>Následně již můžeme provést synchronizaci dat. V našem případě je situace
+jednoduchá, protože lokálně nemáme žádná data, proto převezmeme data z cloudu.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync6.png" data-desc-position="bottom"><img alt="Stažení dat z cloudu" class="img-middle" src="images/sync6.png"></a></p>
+<figcaption>
+<p>Stažení dat z cloudu.</p>
+</figcaption>
+</figure>
+<p>Pokud dojde ke stažení dat, objeví se potvrzení o stažení.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync7.png" data-desc-position="bottom"><img alt="Potvrzení stažení dat z cloudu" class="img-middle" src="images/sync7.png"></a></p>
+<figcaption>
+<p>Potvrzení stažení dat z cloudu.</p>
+</figcaption>
+</figure>
+<p>Následně můžeme pomocí ikony Open otevřít stažený projekt.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync8.png" data-desc-position="bottom"><img alt="Otevřený stažený projekt" class="img-middle" src="images/sync8.png"></a></p>
+<figcaption>
+<p>Otevřený stažený projekt.</p>
+</figcaption>
+</figure>
+<h3 id="uprava-dat-v-qgisu">Úprava dat v QGISu</h3>
+<p>V případě, že provedem úpravy na straně QGIS, můžeme je nahrát na cloud. Tento směr synchronizace (QGIS -&gt; QFieldCloud -&gt; QField) se využívá zejména pro úpravy QGIS projektu a dat, které nejsou editovány v terénu (viz následující upozornění) jako sjou podkladové mapy a další podpůrné vrstvy.</p>
+<div class="admonition warning">
+<p class="admonition-title">Upozornění</p>
+<p>QFieldSync neumí data plně synchronizovat zpět na QFieldCloud. Komunikace QGIS (<em>local</em>) a QFieldCloud (<em>cloud</em>) nesynchronizuje, ale <strong>přepisuje</strong>, a vždy je třeba zvolit, které soubory preferujeme - local vs. cloud. QField a QFieldCloud, ale data plně synchronizuje, spojí .qpkg do jednoho, a verze jsou viditelné na webu QFieldCloud. Pokud je nutná úprava dat v QGIS jsou různá řešení pro různé případy (např. použití samostatné vrstvy nebo první synchronizovat projekt do QGIS a pak zpět za předpokladu že všechna data jsou již na cloudu)</p>
+<p>Příklad: Mapovatel v terénu přidá v QField nový bod do vrstvy <code>mereni.gpkg</code>. Operátor v kanceláři otevře projekt v QGIS, také preovede změny ve vrstvě <code>mereni.gpkg</code> a poté synchronizuje projekt s QFieldCloud, kde zvolí možnost <em>Prefer Local</em>. V tomto případě se data z QGIS <strong>přepíší</strong> na QFieldCloud a mapovatel v terénu již nebude mít přístup k bodu, který přidal v QField, protože verze vrstvy z jeho bodem byla přepsána verzí z QGIS, která tento bod neobsahuje.</p>
+</div>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync9.png" data-desc-position="bottom"><img alt="Nový geoprvek" class="img-middle" src="images/sync9.png"></a></p>
+<figcaption>
+<p>Nový geoprvek.</p>
+</figcaption>
+</figure>
+<p>Změny nejdříve zapíšeme do souboru, nejlépe ukončením editace.
+Pak zvolíme ikonu cloudu (druhou na liště zásuvného modulu).</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync10.png" data-desc-position="bottom"><img alt="No action" class="img-middle" src="images/sync10.png"></a></p>
+<figcaption>
+<p>No action.</p>
+</figcaption>
+</figure>
+<p>Výchozí je stav No action, tedy neprovede se žádná operace.
+V tomto případě chceme nahrát data z lokálního počítače na cloud.
+Volíme proto možnost lokálního počítače, buď zaškrtávacím tlačítkem
+pod ikonou desktopu vedle položky, kterou chceme synchronizovat nebo talčítkem 
+Prefer Local (zapne všechny položky v seznamu jako local).</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync11.png" data-desc-position="bottom"><img alt="Prefer Local" class="img-middle" src="images/sync11.png"></a></p>
+<figcaption>
+<p>Prefer Local.</p>
+</figcaption>
+</figure>
+<p>Zvolíme možnost Perform Actions, která provede synchronizaci.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync12.png" data-desc-position="bottom"><img alt="Synchronizace dokončena" class="img-middle" src="images/sync12.png"></a></p>
+<figcaption>
+<p>Synchronizace dokončena.</p>
+</figcaption>
+</figure>
+<p>Na mobilním telefonu zvolíme nejdříve boční panel.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync13.jpg" data-desc-position="bottom"><img alt="Boční panel QField" class="img-small" src="images/sync13.jpg"></a></p>
+<figcaption>
+<p>Boční panel QField.</p>
+</figcaption>
+</figure>
+<p>V panelu vybere ikonu cloudu a na další obrazovce dáme Synchronizovat.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync14.jpg" data-desc-position="bottom"><img alt="Synchronizovat" class="img-small" src="images/sync14.jpg"></a></p>
+<figcaption>
+<p>Synchronizovat.</p>
+</figcaption>
+</figure>
+<p>Data se stáhnou z cloudu a již je máme k dispozici v mapě. 
+Vidíme nově přidaný bod.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/sync15.jpg" data-desc-position="bottom"><img alt="Aktualizovaná data" class="img-small" src="images/sync15.jpg"></a></p>
+<figcaption>
+<p>Aktualizovaná data.</p>
+</figcaption>
+</figure>
+<h2 id="synchronizace-kopirovanim-souboru">Synchronizace kopírováním souborů</h2>
+<p>Sychronizace dat je možná také kopírováním souborů. Pokud pracujete např. jen s
+jednou databází ve formátu GeoPackage (GPKG), stačí po zapsání změn tuto databázi 
+překopírovat z jednoho zdroje na druhý.</p>
+<p>Toto kopírování je možné realizovat buď přes správce souborů nebo ideální s využitím QFieldSync, který vytváří celý 
+balíček projektu všetně dat.</p>
+<p>V případě, že kopírujete ručně, pak je nutné dávat velký pozor na zámky souborů, 
+přiložená data, apod.</p>
+<p>V případě využití GUI obou nástrojů může být situace jednodušší, přesto se
+může stát, že ne všechbo proběhne vždy bez problémů.</p>
+<p>Obecně tuto varinatu sychnronizace nedoporučujeme, pokud nic nebrání využití cloudu.</p>
+<h2 id="postgresqlpostgis">PostgreSQL/PostGIS</h2>
+<p>Jedna z možností jak se vyhnout potřebě synchronizace dat je využití 
+databázového systému PostgreSQL/PostGIS. PostgreSQL je profesionální systém,
+vyvíjený pod svobodnou licencí a je k dispozici zdarma. </p>
+<p>Pro neznalé podobných systémů se jedná o řízené tabulky s daty, kde se prvky zapisují
+jako řádky tabulky. Ono je to samozřejmě složitější, 
+ale v rámci našeho kurzu nebudeme řešit detaily.
+Rozšíření PostGIS umožňuje zapsat geometrii geoprvků do jednoho z polí tabulky.</p>
+<p>Z pohledu QGIS je pak možné takto ukládaná data připojit podobně jako připojujeme
+mapové (datové) služby OGC (např. WMS, WFS). Podstatné je, že jakékoli změny provedené
+na straně QGIS nebo QField se automaticky zapíší do PostGIS databáze a synchronizace
+je tedy téměř okamžitá. Tento způsob připojení dat, však vyžaduje stabilní připojení k
+síti (např. LTE). Při použití předplatného uložiště QfieldCloud Pro je možné takové připojení používat i s offline
+synchronizací.</p>
+<p>Více informací o tom jak připojit data z PostGIS v QGIS najdete v rámci materiálu pro kurz
+PostGIS pro začátečníky:
+<a href="https://gismentors.github.io/postgis-zacatecnik/kapitoly/2_zaciname.html#zobrazujeme-data-v-qgis">Připojení dat z PostGIS v QGIS</a></p>
+<h2 id="mergin-maps">Mergin Maps</h2>
+<p>Alternativou k QField je nástroj <a href="https://merginmaps.com/">Mergin Maps</a>. 
+Nabízí obdobnou funkcionalitu jako QField. Liší se detailech a může někomu vyhovovat
+více než QField. Funguje na podobném principu jako QField (využívá QGIS projekt, formuláře atd.), ale synchronizace dat 
+probíhá technicky jiným způsobem, což umožňuje například  možné pohodleně editovat data i v QGIS</p>
+<h2 id="gisquick">Gisquick</h2>
+<p>Další možnou alternativou je využití nástroje <a href="https://gisquick.org/">Gisquick</a>.
+Nejedná se úplně o cílené řešení pro mobilní mapování, ale tuto funkcionalitu nabízí.
+Primárně slouží k publikování dat v prostředí WWW prohlížeče. </p>
+<p>Pomocí zásuvného modulu pro QGIS je možné velmi rychle publikovat data na 
+server Gisquick, který si může uživatel buď provozovat sám nebo využít existující server. </p>
+<p>Vypublikovaný QGIS projekt je pak dostupný v rámci WWW prohlížeče (např. Chrome)
+a to i s optimalizací pro mobilní variantu. Klient umožńuje editaci dat stejně jako 
+QField nebo Mergin Maps. </p>
+<p>Nevýhodou tohoto řešení je stejně jako v případě PostGIS nutnost stabilního připojení
+k síti.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Zápatí">
+        
+          
+          <a href="editace.html" class="md-footer__link md-footer__link--prev" aria-label="Předchozí: Editace">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Předchozí
+              </span>
+              <div class="md-ellipsis">
+                Editace
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../projekt/formulare.html" class="md-footer__link md-footer__link--next" aria-label="Další: Formuláře">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Další
+              </span>
+              <div class="md-ellipsis">
+                Formuláře
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2014-2026 GISMentors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Zkop\u00edrov\u00e1no do schr\u00e1nky", "clipboard.copy": "Kop\u00edrovat do schr\u00e1nky", "search.result.more.one": "1 dal\u0161\u00ed na t\u00e9to str\u00e1nce", "search.result.more.other": "# v\u00edce na t\u00e9to str\u00e1nce", "search.result.none": "Nenalezeny \u017e\u00e1dn\u00e9 dokumenty", "search.result.one": "Nalezen\u00fd dokument: 1", "search.result.other": "Nalezen\u00e9 dokumenty: #", "search.result.placeholder": "Pi\u0161te co se m\u00e1 vyhledat", "search.result.term.missing": "Chyb\u011bj\u00edc\u00ed", "select.version": "Vyberte verzi"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
