@@ -7,7 +7,8 @@ theme:
   features:
     - content.code.copy
     - navigation.footer
-    - toc.integrate
+    # - navigation.sections
+    # - toc.integrate
   palette:
     primary: yellow
 copyright: Copyright &copy; 2014-2026 GISMentors
