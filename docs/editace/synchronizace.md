@@ -3,8 +3,8 @@
 Synchronizace dat mezi desktop počítačem a mobilním telefonem je možná různými způsoby.
 V případě QField se nabízí v zásadě čtyři možnosti:
 
-* Využití služby QField Cloud a zásuvného modulu pro QGIS QField Sync - online i offline
-* Využití zásuvného modulu QField Sync bez využití služeb cloudu - přes USB kabel
+* Využití služby QFieldCloud a zásuvného modulu pro QGIS QFieldSync - online i offline
+* Využití zásuvného modulu QFieldSync bez využití služeb cloudu - přes USB kabel
 * Ruční kopírování dat bez synchronizace - přes USB kabel
 * Využití vlastní PostgreSQL/PostGIS připojení dat - pouze online
 
@@ -20,7 +20,7 @@ Detailněji je tento způsob popsán dále.
 ## Synchronizace dat na QFieldCloud
 
 V případě, že jsme provedli nějaké změny na straně mobilní aplikace 
-a máme projekt načten z QField Cloudu je synchronizace snadná. 
+a máme projekt načten z QFieldCloudu je synchronizace snadná. 
 
 ### Odeslání dat z QField na QFieldCloud
 
