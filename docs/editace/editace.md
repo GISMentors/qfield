@@ -140,6 +140,6 @@ Odstranění prvku musíme potvrdit na následujícím dialogu.
 Potvrzení odstranění geoprvku.
 ///
 
-## Topologická editace geoprvků
+<!-- ## Topologická editace geoprvků
 
-Podobně jako v QGIS Desktop je možné zapnout topologickou editaci.
+Podobně jako v QGIS Desktop je možné zapnout topologickou editaci. -->
